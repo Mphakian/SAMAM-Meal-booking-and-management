@@ -1,0 +1,76 @@
+{% extends "base.html" %} {% block title %}Menu{% endblock %}
+
+<head>
+    <style>
+
+    </style>
+</head>
+
+{% block content %}
+
+<body class="menu-body">
+    <h1>Menu Management</h1>
+
+    <h2>Breakfast (Monday to Friday)</h2>
+    <form action="/manager/menu/" method="POST">
+        <label for="breakfast_monday">Monday:</label>
+        <input type="text" id="breakfast_monday" name="breakfast_monday"><br><br>
+
+        <label for="breakfast_tuesday">Tuesday:</label>
+        <input type="text" id="breakfast_tuesday" name="breakfast_tuesday"><br><br>
+
+        <label for="breakfast_wednesday">Wednesday:</label>
+        <input type="text" id="breakfast_wednesday" name="breakfast_wednesday"><br><br>
+
+        <label for="breakfast_thursday">Thursday:</label>
+        <input type="text" id="breakfast_thursday" name="breakfast_thursday"><br><br>
+
+        <label for="breakfast_friday">Friday:</label>
+        <input type="text" id="breakfast_friday" name="breakfast_friday"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Brunch (Saturday and Sunday)</h2>
+    <form action="/manager/menu/" method="POST">
+        <label for="brunch_saturday">Saturday:</label>
+        <input type="text" id="brunch_saturday" name="brunch_saturday"><br><br>
+
+        <label for="brunch_sunday">Sunday:</label>
+        <input type="text" id="brunch_sunday" name="brunch_sunday"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Supper (Monday to Sunday)</h2>
+    <form action="/manager/menu/" method="POST">
+        <label for="supper_monday">Monday:</label>
+        <input type="text" id="supper_monday" name="supper_monday"><br><br>
+
+        <label for="supper_tuesday">Tuesday:</label>
+        <input type="text" id="supper_tuesday" name="supper_tuesday"><br><br>
+
+        <label for="supper_wednesday">Wednesday:</label>
+        <input type="text" id="supper_wednesday" name="supper_wednesday"><br><br>
+
+        <label for="supper_thursday">Thursday:</label>
+        <input type="text" id="supper_thursday" name="supper_thursday"><br><br>
+
+        <label for="supper_friday">Friday:</label>
+        <input type="text" id="supper_friday" name="supper_friday"><br><br>
+
+        <label for="supper_saturday">Saturday:</label>
+        <input type="text" id="supper_saturday" name="supper_saturday"><br><br>
+
+        <label for="supper_sunday">Sunday:</label>
+        <input type="text" id="supper_sunday" name="supper_sunday"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+    
+
+</form>
+
+{% endblock %}

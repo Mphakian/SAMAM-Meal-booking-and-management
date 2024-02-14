@@ -1,0 +1,80 @@
+{% extends "base.html" %} {% block title %}Update Booking{% endblock %}
+
+{% block content %}
+<form method="POST" class="Student-dash">
+    <div class="form-group">
+        <h2>Meal Bookings (Update)</h2>
+        <br>
+        <p>Re-book our meals as by entering this page, your bookign was deleted!</p>
+      <br>
+        <div>
+            <h3>Breakfast</h3>
+            <br>
+            <label for="monday">Mon</label>
+            <input type="checkbox" name="breakfast" id="monday" value="monday">  
+            <label for="tuesday">Tues</label>
+            <input type="checkbox" name="breakfast" id="tuesday" value="tuesday">
+            <label for="wednesday">Wed</label>
+            <input type="checkbox" name="breakfast" id="wednesday" value="wednesday">
+            <label for="thursday">Thur</label>
+            <input type="checkbox" name="breakfast" id="thursday" value="thursday">
+            <label for="friday">Fri</label>
+            <input type="checkbox" name="breakfast" id="friday" value="friday">
+        </div>  
+        <br>
+        <div>
+            <h3>Lunch</h3>
+            <br>
+            <label for="monday">Mon</label>
+            <input type="checkbox" name="lunch" id="monday" value="monday">  
+            <label for="tuesday">Tues</label>
+            <input type="checkbox" name="lunch" id="tuesday" value="tuesday">
+            <label for="wednesday">Wed</label>
+            <input type="checkbox" name="lunch" id="wednesday" value="wednesday">
+            <label for="thursday">Thur</label>
+            <input type="checkbox" name="lunch" id="thursday" value="thursday">
+            <label for="friday">Fri</label>
+            <input type="checkbox" name="lunch" id="friday" value="friday">
+        </div>
+
+        <br>
+        <div>
+            <h3>Brunch</h3>
+            <br>
+            <label for="saturday">Sat</label>
+            <input type="checkbox" name="brunch" id="saturday" value="saturday">  
+            <label for="sunday">Sun</label>
+            <input type="checkbox" name="brunch" id="sunday" value="sunday">
+        </div>    
+
+        <br>
+        <div>
+            <h3>Supper</h3>
+            <br>
+            <label for="monday">Mon</label>
+            <input type="checkbox" name="supper" id="monday" value="monday">  
+            <label for="tuesday">Tues</label>
+            <input type="checkbox" name="supper" id="tuesday" value="tuesday">
+            <label for="wednesday">Wed</label>
+            <input type="checkbox" name="supper" id="wednesday" value="wednesday">
+            <label for="thursday">Thur</label>
+            <input type="checkbox" name="supper" id="thursday" value="thursday">
+            <label for="friday">Fri</label>
+            <input type="checkbox" name="supper" id="friday" value="friday">
+            <label for="saturday">Sat</label>
+            <input type="checkbox" name="supper" id="saturday" value="saturday">
+            <label for="sunday">Sun</label>
+            <input type="checkbox" name="supper" id="sunday" value="sunday">
+        </div>
+
+        <button type="submit" class="btn btn-primary booking-btn">Book</button>
+        <br>
+        
+    </div>
+</form>
+
+<div>
+    <button onclick="document.location='/student/'" method="GET">Back</button>    
+</div>
+
+{% endblock %}

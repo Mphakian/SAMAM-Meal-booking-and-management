@@ -1,0 +1,34 @@
+{% extends "base.html" %} {% block title %}View Menu{% endblock %}
+
+
+{% block content %}
+<body>
+    <h1>Meal Schedule</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Meal Type</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for meal_type, days in meal_schedule.items() %}
+            <tr>
+                <td>{{ meal_type.capitalize() }}</td>
+                {% for day, meal in days.items() %}
+                <td>{{ meal }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+
+{% endblock %}

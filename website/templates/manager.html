@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block title %}Manager{% endblock %}
+
+{% block content %}
+<h1>
+    Welcome to the Manager Page!
+</h1>
+
+<div>
+    <a href="/manager/menu">Update menu</a><br />
+</div>
+<div method="GET">
+    <button onclick="document.location='/manager/bookings/'" method="GET">Get BOOKINGS</button>
+    <br>
+</div>
+{% endblock %}

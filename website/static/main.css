@@ -1,0 +1,164 @@
+
+h1{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2%;
+}
+
+body {
+    background-color: #61223b;
+    color: white;
+}
+
+/* Login page styings*/
+.login-title{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2%;
+    
+}
+
+.login-form{
+    background-color: #b79962;
+    width: auto;
+    height: auto;
+    padding: 5%;   
+}
+
+.login-btn{
+    background-color: #61223b;
+    border-color: #61223b;
+}
+
+.academy-logo{
+    display: block;
+    margin-left: 30%;
+    padding: 2%;
+}
+
+.logo{
+    max-width: 50%;
+    max-height: 50%;
+}
+
+/*Accommodation page stylings*/
+
+.acc-dashboard{
+    text-align: center;
+    background-color: #b79962;
+    width: auto;
+    height: auto;
+    padding: 10%;
+}
+.acc-btns-1{
+    background-color: #61223b;
+    border-color: #61223b;
+}
+
+.separate{
+    padding: 5%;
+}
+
+.acc-btns-2{
+    background-color: #61223b;
+    border-color: #61223b;
+}
+
+.acc-btns{
+    background-color: #b79962;
+    width: auto;
+    height: auto;
+    padding: 10%;
+    text-align: center;   
+}
+
+/*detele page*/
+.delete-form{
+    background-color: #b79962;
+    width: auto;
+    height: auto;
+    padding: 5%;
+    text-align: center;   
+}
+
+.delete-btn{
+    background-color: #61223b;
+    border-color: #61223b;
+    margin-top: 2%;
+}
+
+.back-btn{
+    background-color: #61223b;
+    border-color: #61223b;
+}
+
+/*student dashboard*/
+.Student-dash{
+    text-align: center;
+    background-color: #b79962;
+    width: auto;
+    height: auto;
+    padding: 5%;
+}
+
+.Student-dash h2{
+    text-decoration: underline;
+}
+
+.Student-dash h3{
+    text-decoration: underline;
+}
+
+.booking-btn{
+    background-color: #61223b;
+    border-color: #61223b;
+    margin-top: 5%;
+}
+
+.retrieve-btn{
+    background-color: #61223b;
+    border-color: #61223b;
+    margin-top: 5%;
+}
+
+.bk-tbl{
+    background-color: #b79962;
+    width: 60%;
+    margin-top: 5%;
+
+}
+
+td{
+    border: 2px solid;
+}
+
+
+/* Menu */
+
+.menu-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    
+}
+.menu-body h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.menu-body h2 {
+    margin-top: 40px;
+}
+.menu-body ul {
+    list-style-type:  none;
+    padding: 0;
+    text-align: center;
+}
+.menu-body li {
+    padding: 10px;
+    border-radius: 500px;
+    margin-bottom: 10px;
+}
+.menu-body li strong {
+    font-weight: bold;
+    margin-right: 10px;
+}

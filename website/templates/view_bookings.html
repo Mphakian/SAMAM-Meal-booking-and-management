@@ -1,0 +1,94 @@
+{% extends "base.html" %} {% block title %}Bookings{% endblock %}
+
+{% block content %}
+
+<body>
+    <h1>My Bookings</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="2">Breakfast</th>
+            </tr>
+            <tr>
+                <th>Day</th>
+                <th>Booking Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for day, status in booking_info[:5] %}
+            <tr>
+                <td>{{ day }}</td>
+                <td>{{ status }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="2">Lunch</th>
+            </tr>
+            <tr>
+                <th>Day</th>
+                <th>Booking Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for day, status in booking_info[5:10] %}
+            <tr>
+                <td>{{ day }}</td>
+                <td>{{ status }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="2">Brunch</th>
+            </tr>
+            <tr>
+                <th>Day</th>
+                <th>Booking Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for day, status in booking_info[10:12] %}
+            <tr>
+                <td>{{ day }}</td>
+                <td>{{ status }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="2">Supper</th>
+            </tr>
+            <tr>
+                <th>Day</th>
+                <th>Booking Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for day, status in booking_info[12:] %}
+            <tr>
+                <td>{{ day }}</td>
+                <td>{{ status }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+<div>
+    <br>
+    <br>
+    <button onclick="document.location='/student/'" method="GET">Back</button>    
+</div>
+
+{% endblock %}

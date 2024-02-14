@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block title %}Menu{% endblock %}
+
+{% block content %}
+
+
+
+<body>
+    <h1>Bookings</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Day</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for student_id, bookings in bookings.items() %}
+                {% for day, status in bookings %}
+                    <tr>
+                        {% if loop.index0 == 0 %}
+                            <td rowspan="{{ bookings|length }}">{{ student_id }}</td>
+                        {% endif %}
+                        <td>{{ day }}</td>
+                        <td>{{ status }}</td>
+                    </tr>
+                {% endfor %}
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div>
+        <button onclick="document.location='/manager/bookings/'" method="GET">>Get BOOKINGS</button>
+    </div>
+
+    <div>
+        <button type="button" onclick="document.location='/manager/'" class="btn btn-primary back-btn">Back</button>
+    </div>
+</body>
+
+{% endblock %}
+
+

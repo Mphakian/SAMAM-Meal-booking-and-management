@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% block title %}Account Termination{% endblock %}
+
+{% block content %}
+<form method="POST" class="delete-form">
+    <h1>Submit student number</h1><br/>
+    <div>
+        <label for="user_id">Student Number</label>
+        <input type="number" name="user_id" id="user_id" required>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary delete-btn" >Delete</button>
+    </div>
+
+    <div>
+        <br>
+        <button type="button" onclick="document.location='/accommodation'" class="btn btn-primary back-btn">Back</button>
+    </div>
+</form>
+{% endblock %}
